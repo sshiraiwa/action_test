@@ -12,9 +12,10 @@ on:
 
 jobs:
   extract_version:
-  runs-on: ubuntu-latest
-  steps:
-     - name: echo
-       run: |
-          echo ${{github.event.release.tag_name}}
-          echo ${{github.event.release.upload_url}}	  
+     name: extract version name
+     runs-on: ubuntu-latest
+     steps:
+       - name: echo
+         run: |
+            echo ${{github.event.release.tag_name}}
+            echo ${{github.event.release.upload_url}}	  
