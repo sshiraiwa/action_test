@@ -23,9 +23,9 @@ jobs:
        - name: test
          run: |
            echo $TAG_VERSION
-	   echo sample > sample_out.txt
+           echo sample > sample_out.txt
            tar -zcvf sample-"${TAG_VERSION}".tar.gz  sample_out.txt
-	   
+
        - name: Upload the bottle to the GitHub release
           uses: actions/upload-release-asset@v1.0.1
           env:
