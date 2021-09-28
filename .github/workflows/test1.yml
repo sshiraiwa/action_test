@@ -1,4 +1,4 @@
-name: build_mac
+name: test_data_passing
 
 on:
 #  push:
