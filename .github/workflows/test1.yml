@@ -17,5 +17,7 @@ jobs:
      steps:
        - name: echo
          run: |
+	    version = $(echo ${{github.event.release.tag_name}} | sed 's/[^0-9.]*//g')
+	    echo $version
             echo ${{github.event.release.tag_name}}
             echo ${{github.event.release.upload_url}}	  
