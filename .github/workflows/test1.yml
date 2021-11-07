@@ -25,4 +25,3 @@ jobs:
        - name: run add_cuda
          run: |
            source ./ci_scripts/add_cuda_11_5.sh;	 
-           cat /var/lib/dkms/nvidia/455.32.00/build/make.log
