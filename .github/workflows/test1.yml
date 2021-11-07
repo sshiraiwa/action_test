@@ -21,6 +21,7 @@ jobs:
          run: |
            dpkg -l
            uname -r
-#       - name: run add_cuda
-#         run: |
-#           source ./ci_scripts/add_cuda_11_1.sh;	 
+           sudo apt-get install linux-headers-$(uname -r)	   
+       - name: run add_cuda
+         run: |
+           source ./ci_scripts/add_cuda_11_1.sh;	 
