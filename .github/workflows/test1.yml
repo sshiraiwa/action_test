@@ -19,7 +19,8 @@ jobs:
      
        - name: check if nvidia is there
          run: |
-           dpkg -l | grep nvidia	 
+	   which dpkg
+           sudo dpkg -l | grep nvidia	 
 
        - name: run add_cuda
          run: |
