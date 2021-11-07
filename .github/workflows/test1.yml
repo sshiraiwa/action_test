@@ -19,9 +19,8 @@ jobs:
      
        - name: check if nvidia is there
          run: |
-           which dpkg
-           sudo dpkg -l
-
-       - name: run add_cuda
-         run: |
-           source ./ci_scripts/add_cuda_11_1.sh;	 
+           dpkg -l
+           uname -r
+#       - name: run add_cuda
+#         run: |
+#           source ./ci_scripts/add_cuda_11_1.sh;	 
